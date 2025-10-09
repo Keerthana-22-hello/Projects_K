@@ -60,7 +60,7 @@ function Web() {
     <h2>Your trusted partner for all student essentials</h2>
     <p class="lead">EduMart is built exclusively for students. Our motive is to provide quality stationery and educational tools at affordable prices, empowering students to learn smartly and conveniently.</p>
     <h3>Happy Shopping!</h3>
-    <img src="https://i.pinimg.com/736x/26/e4/80/26e480d49ad183da21cb473a4da14cd6.jpg" alt="stationary" width="80%" height="500"/>
+    <img src="https://wallpaperaccess.com/full/2593105.jpg" alt="stationary" width="80%" height="500"/>
 </div>
    <section class="why-choose bg-light">
     <div class="container">
