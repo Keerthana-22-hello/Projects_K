@@ -9,7 +9,7 @@ function Web() {
   return (
     <BrowserRouter>
       {/* Bootstrap Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3 shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3 shadow-sm rounded mt-2">
         <div className="container-fluid">
           <Link className="navbar-brand fw-bold text-light" to="/">EduMart</Link>
           <button
@@ -57,9 +57,9 @@ function Web() {
     return (
       <>
         <div class="welcome"> <h1>Welcome to EduMart!</h1>
-    <h2>Your trusted partner for all student essentials</h2>
+    <h3>Your trusted partner for all student essentials</h3>
     <p class="lead">EduMart is built exclusively for students. Our motive is to provide quality stationery and educational tools at affordable prices, empowering students to learn smartly and conveniently.</p>
-    <h3>Happy Shopping!</h3>
+    <h4>Happy Shopping!</h4>
     <img src="https://wallpaperaccess.com/full/2593105.jpg" alt="stationary" width="80%" height="500"/>
 </div>
    <section class="why-choose bg-light">
@@ -170,7 +170,7 @@ function Web() {
             We got your details... Welcome to the amazing community of web-page name!
           </h3>
         ) : (
-          <h3 className="text-warning">
+          <h3 className="text-danger">
             Please confirm your details before submitting!
           </h3>
         )}
@@ -218,11 +218,15 @@ function Products() {
                   - Stylish Linen Hardcover College Ruled Note Book with 300 Lined
                   Pages. Perfect for Bible Study & Staying Organized.
                 </p>
-                <p>
+              </details>
+              <p>
                   Price: <del>$50</del> <br />
                   Offer Price: <ins>$35</ins>
                 </p>
-              </details>
+                <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
               <h6 className="text-warning text-center mt-3">⭐ ⭐ ⭐ ⭐</h6>
             </div>
           </div>
@@ -253,6 +257,10 @@ function Products() {
                 Price: <del>$60</del> <br />
                 Offer Price: <ins>$45</ins>
               </p>
+              <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
               <h6 className="text-warning text-center mt-3">⭐ ⭐ ⭐ ⭐</h6>
             </div>
           </div>
@@ -277,11 +285,15 @@ function Products() {
                   Camyla Zoo Series Animal Sticky Notes | Cute Kawaii Animal Memo
                   Pads – Puppy, Kitten, Bear & Bunny Designs | 1728 Sheets per Pack.
                 </p>
-                <p>
+              </details>
+              <p>
                   Price: <del>$100</del> <br />
                   Offer Price: <ins>$50</ins>
                 </p>
-              </details>
+                <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
               <h6 className="text-warning text-center mt-3">⭐ ⭐ ⭐ ⭐</h6>
             </div>
           </div>
@@ -306,11 +318,15 @@ function Products() {
                   Vintage Aesthetic Scrapbook Kit (346Pcs) with Bullet Junk Journal,
                   Stationery, A6 Grid Notebook – Perfect Gift for Teen Girls & Women.
                 </p>
-                <p>
+              </details>
+              <p>
                   Price: <del>$200</del> <br />
                   Offer Price: <ins>$100</ins>
                 </p>
-              </details>
+                <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
               <h6 className="text-warning text-center mt-3">⭐ ⭐ ⭐ ⭐</h6>
             </div>
           </div>
@@ -324,6 +340,7 @@ function Products() {
               className="card-img-top rounded"
               alt="Cute pouch"
               height="300"
+
             />
             <div className="card-body">
               <h5 className="card-title text-center text-secondary">
@@ -335,11 +352,15 @@ function Products() {
                   PRIME DEALS Canvas Premium Pencil Case Hangable 6 Layer with 3
                   Compartments – Large Capacity Cute Stationery Gift for Girls.
                 </p>
-                <p>
+              </details>
+              <p>
                   Price: <del>$120</del> <br />
                   Offer Price: <ins>$80</ins>
                 </p>
-              </details>
+                <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
               <h6 className="text-warning text-center mt-3">⭐ ⭐ ⭐ ⭐</h6>
             </div>
           </div>
@@ -351,13 +372,14 @@ function Products() {
 
 function Retail() {
   return (
+    <div className="container">
     <div className="container my-5">
-      <h1 className="text-center fw-bold mb-5 text-primary">
-        WELCOME TO THE RETAIL PAGE!
-      </h1>
-
+      <h2 className="text-center mb-5 fw-bold text-primary">WELCOME TO THE RETAIL PAGE</h2>
+      </div> 
+    <div className="">
+<div className="row gy-5 justify-content-center">
       {/* Product 1 */}
-      <div className="card mb-5 shadow-sm border-0">
+      <div className="col-md-6 card col-lg-4 shadow-sm border-0">
         <div className="card-body text-center">
           <h2 className="card-title text-secondary fw-semibold">
             Handwritten Aesthetic Notes
@@ -376,20 +398,21 @@ function Retail() {
               layouts that make studying a joy. Each page blends creativity with
               clarity, turning learning into an aesthetic experience.
             </p>
-            <p>
+          </details>
+          <p>
               Price: <del>$200</del>
               <br />
               Offer Price: <ins>$150</ins>
             </p>
-          </details>
+            <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
           <h3 className="text-warning mt-3">⭐ ⭐ ⭐ ⭐</h3>
         </div>
       </div>
-
-      <hr className="my-4" />
-
       {/* Product 2 */}
-      <div className="card mb-5 shadow-sm border-0">
+      <div className="col-md-6 card m-5 col-lg-4 shadow-sm border-0">
         <div className="card-body text-center">
           <h2 className="card-title text-secondary fw-semibold">
             Colourful Productivity Notes
@@ -408,20 +431,21 @@ function Retail() {
               colourful pens and tidy handwriting to make even tough topics feel
               light and engaging.
             </p>
-            <p>
+          </details>
+          <p>
               Price: <del>$300</del>
               <br />
               Offer Price: <ins>$150</ins>
             </p>
-          </details>
+            <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
           <h3 className="text-warning mt-3">⭐ ⭐ ⭐ ⭐</h3>
         </div>
       </div>
-
-      <hr className="my-4" />
-
       {/* Product 3 */}
-      <div className="card mb-5 shadow-sm border-0">
+      <div className="col-md-6 card col-lg-4 shadow-sm border-0">
         <div className="card-body text-center">
           <h2 className="card-title text-secondary fw-semibold">
             Minimal Aesthetic Notes
@@ -440,20 +464,22 @@ function Retail() {
               smooth highlights, and an eye-catching design that helps ideas
               stick better.
             </p>
-            <p>
+           
+          </details>
+           <p>
               Price: <del>$100</del>
               <br />
               Offer Price: <ins>$50</ins>
             </p>
-          </details>
+            <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
           <h3 className="text-warning mt-3">⭐ ⭐ ⭐ ⭐</h3>
         </div>
       </div>
-
-      <hr className="my-4" />
-
       {/* Product 4 */}
-      <div className="card mb-5 shadow-sm border-0">
+      <div className="col-md-6 m-5 card col-lg-4 shadow-sm border-0">
         <div className="card-body text-center">
           <h2 className="card-title text-secondary fw-semibold">
             Pastel Study Notes
@@ -472,17 +498,23 @@ function Retail() {
               notes turn ordinary lessons into something artistic and motivating
               to read.
             </p>
-            <p>
+           
+          </details>
+           <p>
               Price: <del>$200</del>
               <br />
               Offer Price: <ins>$100</ins>
             </p>
-          </details>
+            <button type="button" class="btn btn-primary">
+  Buy Now
+</button>
+
           <h3 className="text-warning mt-3">⭐ ⭐ ⭐ ⭐</h3>
         </div>
       </div>
-
-      <hr className="my-4" />
+    </div>
+    
+    </div>
     </div>
   );
 }
