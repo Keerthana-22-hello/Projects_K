@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update  Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet"> 
+ <style>
+     body {
+        background-color: #f4f6f8;
+        color: #333;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+     }
+     #top {
+        background-color: #1c1f26;
+        height: 50%;
+     }
+     #brand {
+        background-color: #2c3e50;
+     }
+     #BrandButton {
+        background-color: #2980b9;
+        color: white;
+     }
+     .font {
+        font-family: "Amarante", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+     }
+     label, .form-check-label {
+        color: #2c3e50;
+     }
+     .form-check-input:checked {
+        background-color: #3498db;
+        border-color: #3498db;
+     }
+     .btn-primary {
+        background-color: #2980b9;
+        border: none;
+     }
+     .btn-primary:hover {
+        background-color: #1c6fa0;
+     }
+ </style>  
+</head>
+<body class="container-fluid">
+  <!--Address-->
+<div class="container-fluid text-white" id="top" style="height:50px; ">
+  <div class="row" style="font-size: 13px;padding:2px;" >
+    <div class="col-3">
+      <span>Chennai, TamilNadu, India</span>
+    </div>
+    <div class="col-2"><i class="bi bi-envelope"></i>
+    <span>abc123@gmail.com</span></div>
+    <div class="col-5"></div>
+    <div class="col">Nest. Grow. Fly.</div>
+  </div>
+</div>
+
+<!--Navbar and brand-->
+  <div class="container-fluid h-50 p-3" id='brand'>
+      <div class="row ">
+<!-- Logo Section -->
+<div class="text-center my-4">
+  <h1 style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 3rem;">Evo<span style="color: #4CAF50;">Tech</span></h1>
+  <p style="color: #888; font-size: 1rem; font-style: italic;">A proud branch of <strong>EvoSci</strong></p>
+</div>
+        <div class="col-4"></div>
+        <div class="col font text-white">Where Evolving Tech Meets Evolving You</div>
+      </div>
+  </div> 
+    <!--home navbar-->
+    <div class="container-fluid mt-3">
+      <div class="row">
+
+        <div class="col">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/evo_tech">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/sign_up">Sign Up </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/login">Admin</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+    </div> <hr>
+
+
+    
+        <div class="col">
+          <span class="display-6">Edit Details</span>
+        </div>
+      </div>
+    </div>
+<hr>
+
+<form action="/submit" method="POST">
+  <div class="container mt-5">
+      <div class="row m-2 mb-5 ms-2">
+        <div class="col-3 ">
+              <label for="Input1" class="form-label">Current Profession / Student</label>
+        </div>
+        <div class="col-4">
+          <input type="text" name="Current_Profession" class="form-control form-control-sm w-75" id="Input1" placeholder="Developer/ Student">
+        </div>
+      </div>
+      <div class="row m-2 mb-5 ms-2">
+        <div class="col-3 ">
+              <label for="Input2" class="form-label">Field of Interest</label>
+        </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Field_of_Interest" id="inlineCheckbox1" value="Technology">
+            <label class="form-check-label" for="inlineCheckbox1">Technology</label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Field_of_Interest" id="inlineCheckbox2" value="Money">
+            <label class="form-check-label" for="inlineCheckbox2">Economy and Money</label>
+          </div>
+          <div class="col form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="Field_of_Interest" id="inlineCheckbox3" value="Personal_Development">
+            <label class="form-check-label" for="inlineCheckbox3">Personal Development</label>
+          </div>
+      </div>
+      <div class="row m-2 mb-5 mt-3">
+          <div class="col-3">
+              Skill Level
+          </div>
+              <div class=" col form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="Skill_Level" id="inlineCheckbox1" value="Beginner">
+                  <label class="form-check-label" for="inlineCheckbox1">Beginner</label>
+                </div>
+              <div class="col form-check form-checka-inline">
+                  <input class="form-check-input" type="checkbox" name="Skill_Level" id="inlineCheckbox2" value="Intermediate">
+                  <label class="form-check-label" for="inlineCheckbox2">Intermediate</label>
+                </div>
+                <div class="col form-check form-checka-inline">
+                  <input class="form-check-input" type="checkbox" name="Skill_Level" id="inlineCheckbox3" value="Expert">
+                  <label class="form-check-label" for="inlineCheckbox3">Expert</label>
+                </div>
+        </div>
+        <div class="row m-2 mb-5 mt-3">
+          <div class="col-3">
+            Preferred Learning Format
+        </div>
+            <div class=" col form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="Learning_method" id="inlineCheckbox1" value="Video">
+                <label class="form-check-label" for="inlineCheckbox1">Video</label>
+              </div>
+            <div class="col form-check form-checka-inline">
+                <input class="form-check-input" type="checkbox" name="Learning_method" id="inlineCheckbox2" value="Text">
+                <label class="form-check-label" for="inlineCheckbox2">Text</label>
+              </div>
+              <div class="col form-check form-checka-inline">
+                <input class="form-check-input" type="checkbox" name="Learning_method" id="inlineCheckbox3" value="Practice_Based">
+                <label class="form-check-label" for="inlineCheckbox3">Practice_Based</label>
+              </div>
+        </div>
+        <div class="row m-2 mb-5 ms-2">
+          <div class="col-3 ">
+                <label for="Input1" class="form-label">Linked-In Profile</label>
+          </div>
+          <div class="col-4">
+            <input type="text" name="Linked_in" class="form-control form-control-sm w-75" id="Input1" placeholder="Optional">
+          </div>
+        </div>
+  </div>
+      <div class="row mt-5">
+          <div class="col-5">
+              <!-- Your form or content here -->
+            </div>
+          <div class="col justify-content-center">
+              <button class="btn btn-primary" type="submit">SIGN UP</button>
+          </div>
+      </div>
+  </div>
+</form>
+<!--delete form-->
+    <form action="\delete" method="POST">
+          <div class="row m-2 mt-5 mb-5 ms-2">
+            <div class="col-3 ">
+                  <label for  ="exampleFormControlInput1" class="form-label">ID</label>
+            </div>
+            <div class="col-3">
+              <input type="number" name="Id" class="form-control form-control-sm w-75" id="exampleFormControlInputid" placeholder="ID Number">
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+            </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
