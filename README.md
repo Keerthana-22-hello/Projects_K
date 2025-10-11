@@ -35,20 +35,20 @@ Version Control:
 Git & GitHub
 
 📂 Project Structure
-EduMart/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── ...
-│   └── package.json
-│
-├── backend/
-│   ├── app.py
-│
-└── README.md
+EduMart/  <br>
+│<br>
+├── frontend/<br>
+│   ├── src/<br>
+│   │   ├── components/<br>
+│   │   ├── App.js<br>
+│   │   ├── index.js<br>
+│   │   └── ...<br>
+│   └── package.json<br>
+│<br>
+├── backend/    <br>                                                                      
+│   ├── app.py<br>
+│<br>
+└── README.md<br>
 
 🧠 Learning Outcomes
 
@@ -61,12 +61,12 @@ Experience in designing a responsive user interface.
 Collaboration using GitHub and version control best practices.
 
 🧑‍🤝‍🧑 Contributors
-__________________________________________________________________________________________________________
-Name	                     |                   Role	         |          Contribution                      |
-___________________________|_________________________________|____________________________________________|
-Keerthana     	           |             Frontend Developer	 |    HTML, CSS, Bootstrap & React integration|
-Minhu Parthasarathy	       |             Backend Developer	 |       React.js skeleton build              |
-___________________________|_________________________________|____________________________________________|
+__________________________________________________________________________________________________________<br>
+Name	                     |                   Role	         |          Contribution                      |<br>
+___________________________|_________________________________|____________________________________________|<br>
+Keerthana     	           |             Frontend Developer	 |    HTML, CSS, Bootstrap & React integration|<br>
+Minhu Parthasarathy	       |             Backend Developer	 |       React.js skeleton build              |<br>
+___________________________|_________________________________|____________________________________________|<br>
 🧭 How to Run Locally
 
 Clone the repository
