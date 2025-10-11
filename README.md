@@ -61,9 +61,12 @@ Experience in designing a responsive user interface.
 Collaboration using GitHub and version control best practices.
 
 🧑‍🤝‍🧑 Contributors
-Name	                                        Role	                Contribution
-Keerthana     	                        Frontend Developer	      HTML, CSS, Bootstrap & React integration
-Minhu Parthasarathy	                    Backend Developer	        React.js skeleton build
+__________________________________________________________________________________________________________
+Name	                     |                   Role	         |          Contribution                      |
+___________________________|_________________________________|____________________________________________|
+Keerthana     	           |             Frontend Developer	 |    HTML, CSS, Bootstrap & React integration|
+Minhu Parthasarathy	       |             Backend Developer	 |       React.js skeleton build              |
+___________________________|_________________________________|____________________________________________|
 🧭 How to Run Locally
 
 Clone the repository
