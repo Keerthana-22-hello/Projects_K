@@ -4,169 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvoTech  </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>EvoTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet"> 
- <style>
-     body {
-        background-color: #f4f6f8;
-        color: #333;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-     }
-     #top {
-        background-color: #1c1f26;
-        height: 50%;
-     }
-     #brand {
-        background-color: #2c3e50;
-     }
-     #BrandButton {
-        background-color: #2980b9;
-        color: white;
-     }
-     .font {
-        font-family: "Amarante", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 18px;
-     }
-     label, .form-check-label {
-        color: #2c3e50;
-     }
-     .form-check-input:checked {
-        background-color: #3498db;
-        border-color: #3498db;
-     }
-     .btn-primary {
-        background-color: #2980b9;
-        border: none;
-     }
-     .btn-primary:hover {
-        background-color: #1c6fa0;
-     }
- </style>  
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Sarina&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #top {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            height: 50px;
+        }
+        #brand {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .font {
+            font-family: 'Amarante', serif;
+            font-size: 18px;
+        }
+        .nav-link {
+            color: #1e3c72 !important;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: #4CAF50 !important;
+            text-decoration: underline;
+        }
+        .btn-primary, .btn-warning {
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-warning:hover {
+            transform: scale(1.05);
+            background-color: #ffca2c;
+        }
+        #welcome-section {
+            padding: 60px 0;
+        }
+        #welcome-section img {
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        #welcome-section img:hover {
+            transform: scale(1.05);
+        }
+        .about-section {
+            background: linear-gradient(145deg, #ffffff, #e3f2fd);
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            padding: 25px;
+        }
+        .reachout-box {
+            background: linear-gradient(135deg, #0d1771, #172ba3);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        .reachout-box:hover {
+            transform: scale(1.03);
+        }
+        footer {
+            background-color: #05172c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
 </head>
-<body class="container-fluid">
-  <!--Address-->
-<div class="container-fluid text-white" id="top" style="height:50px; ">
-  <div class="row" style="font-size: 13px;padding:2px;" >
-    <div class="col-3">
-      <span>Chennai, TamilNadu, India</span>
+<body>
+    <div id="top" class="container-fluid text-white d-flex align-items-center px-3">
+        <div class="me-auto">Chennai, Tamil Nadu, India</div>
+        <div><i class="bi bi-envelope"></i> abc123@gmail.com</div>
+        <div class="ms-auto fst-italic">Nest. Grow. Fly.</div>
     </div>
-    <div class="col-2"><i class="bi bi-envelope"></i>
-    <span>abc123@gmail.com</span></div>
-    <div class="col-5"></div>
-    <div class="col">Nest. Grow. Fly.</div>
-  </div>
-</div>
 
-<!--Navbar and brand-->
-  <div class="container-fluid h-50 p-3" id='brand'>
-      <div class="row ">
-<!-- Logo Section -->
-<div class="text-center my-4">
-  <h1 style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 3rem;">Evo<span style="color: #4CAF50;">Tech</span></h1>
-  <p style="color: #888; font-size: 1rem; font-style: italic;">A proud branch of <strong>Evo</strong></p>
-</div>
-        <div class="col-4"></div>
-        <div class="col font text-white">Where Evolving Tech Meets Evolving You</div>
-      </div>
-  </div> 
-  <!--home navbar-->
-    <div class="container-fluid mt-3">
-      <div class="row">
+    <div id="brand" class="text-center text-white py-4">
+        <h1 style="font-family: 'Sarina', cursive; color: #4da6ff; font-size: 3rem;">Evo<span style="color: #4CAF50;">Tech</span></h1>
+        <p style="color: #d0d3d4; font-size: 1rem; font-style: italic;">A proud branch of <strong>Evo</strong></p>
+        <p class="text-light">Where Evolving Tech Meets Evolving You</p>
+    </div>
 
-        <div class="col">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/evo_tech">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/sign_up">Sign Up </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/login">Admin</a>
-            </li>
-          </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container justify-content-end">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active" href="/evo_tech">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/sign_up">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login">Admin</a></li>
+            </ul>
         </div>
-    </div> <hr>
-<!--Welcome-->
-    <div class="container-fluid">
-      <div class="row mt-3">
-        <div class="col">
-          <div class="row">
-            <span class="fs-1 col font_wel">Welcome!</span>
-          </div>
-          <div class="row">
-            <div class="col">To <span class="fs-5 text-success">EvoTech</span> Where Evolving Tech meets Evolving You</div>
-          </div><br>
-          <div class="row"><p class="text-warning mb-2">About-us<hr></p></div>
-         <div class="row">
-            <div class="col">EvoTech is your personal space where evolving technology meets evolving you.
-              We bring together the latest insights in emerging tech and provide tools to help you track your own growth, skill by skill.
-              This includes all recent developments in computer sciences and its advances. 
-              Whether you're a student just starting out or a lifelong learner exploring new frontiers, EvoSci helps you stay informed, stay inspired, and stay on track.
-             <br><br> This is your digital nest — a place to learn, grow, and take flight into the future with purpose. 
-              </div>
-         </div>
+    </nav>
+
+    <section id="welcome-section" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold">Welcome!</h2>
+                <p>To <span class="text-success fw-bold">EvoTech</span> — Where Evolving Tech meets Evolving You</p>
+                <div class="about-section mt-3">
+                    <h5 class="text-primary fw-bold">About Us</h5>
+                    <p>EvoTech is your personal space where evolving technology meets evolving you. We bring together the latest insights in emerging tech and provide tools to help you track your own growth, skill by skill. This includes all recent developments in computer sciences and its advances. Whether you're a student just starting out or a lifelong learner exploring new frontiers, EvoSci helps you stay informed, stay inspired, and stay on track.<br><br>This is your digital nest — a place to learn, grow, and take flight into the future with purpose.</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="static/OIP (1).jpeg" alt="Self_Learn" class="img-fluid mt-3" style="height:400px; object-fit:cover;">
+            </div>
         </div>
-        <div class="col">
-          <img src="static/OIP (1).jpeg"class="mt-3" style="height:400px;" alt="Self_Learn">
+    </section>
+
+    <section class="container my-5">
+        <div class="reachout-box p-4 text-center">
+            <h3 class="fw-bold mb-3">Reach out to us!</h3>
+            <p>Want to know more of us, what we are working on, to collaborate or even to invest? Simply write to us and we will get back in a short time.</p>
+            <button class="btn btn-warning mt-2 text-dark fw-bold">CONTACT US</button>
         </div>
-      </div>
-      
-    </div>
-<!--Reachout-->
-    <div class="row" style="position:absolute;top:800px;left:100px;height:200px;width:550px">
-      <div class="container p-3" style="background-color:rgb(13, 23, 83);color:white;border-radius:5%">
-          <div class="container text-left fs-4 p-4" style="font-weight:bold;"> Reach out to us!</div>
-          <div class="container text-left fs-6 p-2 ms-2">Want to know more of us, what we are working on or to collaborate or even to invest. Simply write to us and we will get back in short time.</div>
-          <button class="btn btn-warning m-4" style="color:rgb(13, 23, 83)">CONTACT US</button>
-      </div>
-    </div>
-<!--sample-->   
-    <div class="container-fluid m-3" style="background-color: #f9fdff;height:400px" >
-  </div>
+    </section>
 
-<!--end-->
-<div class="container-fluid mt-3 " style="background-color: #123155;height:250px">
-<div class="row">
-<div class="col p-4 text-white">
-    <p class=" "> To Visit Our Parent Associative
-      <br><br>
-      <h1 class="col" style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 2rem;"><img src="static/nest (2).png" style="height:50px;width:50px;" alt="evoSci"> <a href="/evoSci" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Sci</a></h1>    </p>
-    <p>Email : EvoSci22@gmail.com</p>
-    <p>Contact  : 88888 88888</p>
-  </div>
+    <section class="container-fluid py-5" style="background-color: #f9fdff;"></section>
 
-  <div class="col p-3 mt-3">
-    <div class=" my-2">
-      <h1 style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 2rem;">Evo<span style="color: #4CAF50;">Tech</span></h1>
-      <p style="color: #888; font-size: 1rem; font-style: italic;">A proud branch of <strong>EvoSci</strong></p>
-    </div>
-      <div class="row text-white">
-        <div class="font col m-1 p-1 text-white">Where Evolving Tech Meets Evolving You</div>
-      
-      <p>Email : EvoTech22@gmail.com</p>
-      <p>Contact : 11111 11111</p>
-    
-    </div>  
-  </div>
-</div>
-</div>
-<div class="container-fluid col p-3 text-white" style="background-color: #05172c;height:50px" >
-  @Copyright 2025  EvoTech
-</div>
+    <section class="container-fluid py-4" style="background-color: #123155; color: white;">
+        <div class="row text-center text-md-start">
+            <div class="col-md-6 p-4">
+                <h5>To Visit Our Parent Associative</h5>
+                <h1 style="font-family: 'Sarina', cursive; color: #4da6ff; font-size: 2rem;">
+                    <img src="static/nest (2).png" style="height:50px;width:50px;" alt="evoSci"> 
+                    <a href="/evoSci" style="text-decoration:none; color:#49e629;">Evo</a><span style="color:white;">Sci</span>
+                </h1>
+                <p>Email: EvoSci22@gmail.com<br>Contact: 88888 88888</p>
+            </div>
+            <div class="col-md-6 p-4">
+                <h1 style="font-family: 'Sarina', cursive; color: #4da6ff; font-size: 2rem;">Evo<span style="color: #4CAF50;">Tech</span></h1>
+                <p style="color: #ccc; font-style: italic;">A proud branch of <strong>EvoSci</strong></p>
+                <p>Where Evolving Tech Meets Evolving You<br>Email: EvoTech22@gmail.com<br>Contact: 11111 11111</p>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        &copy; 2025 EvoTech. All Rights Reserved.
+    </footer>
 
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

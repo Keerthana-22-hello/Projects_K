@@ -5,119 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EvoEarth</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-<style>
-.welcome {
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fbf8;
+            scroll-behavior: smooth;
+        }
+        .welcome {
+            font-family: "Caveat", cursive;
+            font-weight: 700;
+        }
+        .navbar-nav a:hover {
+            color: #4cd964 !important;
+            transition: 0.3s;
+        }
+        .brand-title {
+            font-family: 'Sarina', cursive;
+            color: rgb(73, 230, 41);
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, rgb(161, 241, 161), rgb(113, 203, 238));
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+        .btn-warning:hover {
+            background-color: #f7d44c;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .tick-list li {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        footer {
+            background: linear-gradient(90deg, #444, #111);
+        }
+    </style>
 </head>
-<div class="container">
-<body class="row mx-3">
+<body class="container-fluid p-0">
+
 <!--TOP ADDRESS-->
-    <div class="row text-center py-2" style="background-color: rgb(133, 220, 247);">
-        <div class="row">
-            <div class="col"><i class="bi bi-geo-alt-fill"></i> Chennai, Tamilnadu, India</div>
-            <div class="col"><i class="bi bi-envelope-at"></i> xyz456@gmail.com</div>
-            <div class="col">Learn. Evolve. Empower.</div>
-        </div>
+<div class="row text-center py-2" style="background-color: rgb(133, 220, 247);">
+    <div class="col"><i class="bi bi-geo-alt-fill"></i> Chennai, Tamilnadu, India</div>
+    <div class="col"><i class="bi bi-envelope-at"></i> xyz456@gmail.com</div>
+    <div class="col">Learn. Evolve. Empower.</div>
+</div>
+
+<!--Home Brand-->
+<div class="row align-items-center px-3 py-3" style="background-color: rgb(218, 250, 218);">
+    <div class="col-md-6 d-flex align-items-center">
+        <a href="/" class="text-decoration-none brand-title"><img src="static/4393260.png" style="height:50px;width:50px;">EvoEarth</a>
     </div>
-<!--Home Brand-->  
-    <div class="row" style="background-color: rgb(218, 250, 218);">
-        <div class="row" style="padding: 3% 2% 2% 2%">
-            <a href="/" class="col" style="text-decoration:none;"><h1 style="font-family: 'Sarina', cursive; color:rgb(73, 230, 41);  font-size: 3rem;"><img src="static/4393260.png" style="height:50px; width:50px;" alt="EvoEarth"> EvoEarth</h1></a>
-            <div class="col-3"></div>
-            <div class="col py-3" style="font-family:'Sarina', cursive;font-weight: 400;font-style: normal;font-size:20px">Where You Grow, the World Grows.</div>
-        </div>
-    </div>
-<!--EvoSci - EvoFarm - EvoGovern  -  EvoMan-->
-    <div class=" row text-center py-4">
-        <h1 class="col" style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 25px;"><img src="static/nest (2).png" style="height:40px;width:40px" alt="evoSci"> <a href="/evoSci" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Sci</a></h1>
-        <h1 class="col" style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 25px;"><img src="static/money-growth.png" style="height:40px;width:40px" alt="evoSci"> <a href="/evoMoney" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Money</a></h1>
-        <h1 class="col" style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 25px;"><img src="static/bank.png"style="height:30px;width:30px" alt="evogovern"> <a href="/evoGovern" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Govern</a></h1>
-        <h1 class="col" style="font-family: 'Sarina', cursive; color: #8203cc; font-size: 25px;"><img src="static/brain.png" alt="evoman" style="height:40px;width:40px;"><a href="/evo_man" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Man</a> </h1>
-    </div>
+    <div class="col-md-6 text-end" style="font-family:'Sarina', cursive;font-size:20px;">Where You Grow, the World Grows.</div>
+</div>
+
+<!--Branches-->
+<div class="row text-center py-4 bg-light shadow-sm">
+    <div class="col"><a href="/evoSci" class="text-decoration-none" style="font-family:'Sarina', cursive; color:#2776d6;"><img src="static/nest (2).png" style="height:40px;width:40px;"> <span style="color:rgb(73, 230, 41);">Evo</span>Sci</a></div>
+    <div class="col"><a href="/evoMoney" class="text-decoration-none" style="font-family:'Sarina', cursive; color:#2776d6;"><img src="static/money-growth.png" style="height:40px;width:40px;"> <span style="color:rgb(73, 230, 41);">Evo</span>Money</a></div>
+    <div class="col"><a href="/evoGovern" class="text-decoration-none" style="font-family:'Sarina', cursive; color:#2776d6;"><img src="static/bank.png" style="height:30px;width:30px;"> <span style="color:rgb(73, 230, 41);">Evo</span>Govern</a></div>
+    <div class="col"><a href="/evo_man" class="text-decoration-none" style="font-family:'Sarina', cursive; color:#8203cc;"><img src="static/brain.png" style="height:40px;width:40px;"> <span style="color:rgb(73, 230, 41);">Evo</span>Man</a></div>
+</div>
+
 <!--Nav Bar-->
-    <div class="row">
-        <hr>
-        <div class="row">
-            <div class="col-9"></div>
-            <div class="col" style="font-size:20px;">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-        </div>
-        <hr>
-    </div>
-<!--Welcome-->
-<div class="row" style="background:linear-gradient(rgb(161, 241, 161),rgb(113, 203, 238));">
-    <div class="container-fluid py-3">
-        <div class="row">
-            <div class="col">
-                <div class="row">
-                <span class="fs-1 welcome">Welcome To EvoEarth</span>
-                <br><span>Where you Grow, the World Grows</span>
-                </div> <br>
-                <div>Explore a digital platform built to guide your growth — in technology, personal development, and financial strength.</div>
-             <br>   <a href="/earthSignUp"><button class="btn btn-warning">GET STARTED</button> </a>
-            </div>
-                <img class="col" src="static/OIP (4).jpeg" style="height:300px;width:500px" alt="">
-            </div>
-        </div>
-        </div>
-<!--Student skill Tracker-->
-<div class="row my-2" style="height:400px; background-color: #05172c;">
-    <div class="row">
-      <div class="col-5 " id="studentSkillTracker" style="height:400px;width:350px;background-repeat:none; background-image: url('static/OIP (3).jpeg');background-size: cover; "><p class="fs-2 pt-5 mt-5 pt-5 font_skill_track d-flex justify-content-center align-items-center"><br>Student<br>Skill<br>Tracker<br>
-      <p style="font-size:16px;" class="justify-content-center ps-5 mt-3 ms-5">Track your growth. <br>Celebrate your progress.</p></p></div>
-      <div class="col text-white">
-        <p class="p-3"> The <b>Student Skill Tracker</b> is a core feature of <b><i>EvoSci</i></b>, designed to help learners monitor, measure, and master their personal development journey.<br>
-<br>  
-          With this tool, you can:
-          <ul class="list-unstyled tick-list ms-4">
-            <li><i class="bi bi-check-circle-fill text-white me-2"></i> Log your skills and learning milestones</li>
-            <li><i class="bi bi-check-circle-fill text-white me-2"></i> Set personal goals and track your improvement over time</li>
-            <li><i class="bi bi-check-circle-fill text-white me-2"></i> Visualize your progress through clean, interactive dashboards</li>
-            <li><i class="bi bi-check-circle-fill text-white me-2"></i> Discover areas of strength and identify what to focus on next</li>
-          </ul>
-          <div class="ms-3">Whether you're learning to code, improving communication, or exploring new technologies, the Student Skill Tracker keeps you organized, motivated, and moving forward — all in one place.
-         </div><br> </p>
+<nav class="navbar navbar-expand-lg navbar-light bg-white px-5">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
       </div>
     </div>
   </div>
-<!--end-->
-<div class="row text-white p-3" style="background:grey;">
-    <div class="col"><p>Email  : EvoEarth22@gmail.com</p>
-    <p>Phone  : 55555 55555</p></div>    
-</div>
-<div class="row text-center p-2 text-white bg-dark">@Copyright 2025 EvoEarth</div>
+</nav>
 
+<!--Welcome Section-->
+<div class="row hero-section align-items-center p-5 my-4">
+  <div class="col-md-6 text-dark">
+    <h1 class="welcome">Welcome To EvoEarth</h1>
+    <p>Where you Grow, the World Grows</p>
+    <p>Explore a digital platform built to guide your growth — in technology, personal development, and financial strength.</p>
+    <a href="/earthSignUp" class="btn btn-warning">GET STARTED</a>
+  </div>
+  <div class="col-md-6 text-center">
+    <img src="static/OIP (4).jpeg" class="img-fluid rounded shadow" alt="EvoEarth Welcome">
+  </div>
+</div>
+
+<!--Student Skill Tracker-->
+<div class="row text" style="background-color:#05172c; border-radius:15px;">
+  <div class="col-md-5 d-flex flex-column justify-content-center align-items-center text-center" style="background-image:url('static/OIP (3).jpeg'); background-size:cover; background-position:center; border-radius:15px 0 0 15px;">
+    <h2>Student Skill Tracker</h2>
+    <p>Track your growth. Celebrate your progress.</p>
+  </div>
+  <div class="col-md-7 p-4 text-white">
+    <p>The <b>Student Skill Tracker</b> is a core feature of <b><i>EvoSci</i></b>, designed to help learners monitor, measure, and master their personal development journey.</p>
+    <ul class="list-unstyled tick-list">
+      <li><i class="bi bi-check-circle-fill me-2"></i> Log your skills and learning milestones</li>
+      <li><i class="bi bi-check-circle-fill me-2"></i> Set personal goals and track improvement</li>
+      <li><i class="bi bi-check-circle-fill me-2"></i> Visualize progress through dashboards</li>
+      <li><i class="bi bi-check-circle-fill me-2"></i> Identify strengths and focus areas</li>
+    </ul>
+    <p>Whether you're learning to code, improving communication, or exploring new technologies, the Student Skill Tracker keeps you organized, motivated, and moving forward — all in one place.</p>
+  </div>
+</div>
+
+<!--Footer-->
+<footer class="text-white mt-4">
+  <div class="row p-4">
+    <div class="col-md-6">
+      <p>Email: EvoEarth22@gmail.com</p>
+      <p>Phone: 55555 55555</p>
+    </div>
+  </div>
+  <div class="text-center py-2 bg-dark">© Copyright 2025 EvoEarth</div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-</div>
 </html>

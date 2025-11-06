@@ -5,170 +5,174 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EvoSci</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #f7fff7, #e8f5e9);
+            font-family: 'Caveat', cursive;
+        }
+        .top-bar {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 0;
+        }
+        .brand-header {
+            background: linear-gradient(to right, white, #c8facc);
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar-nav .nav-link:hover {
+            color: #2e7d32 !important;
+            text-decoration: underline;
+        }
+        .welcome-section {
+            border-radius: 15px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+        }
+        footer {
+            background: linear-gradient(180deg, #4CAF50, #063507);
+            color: white;
+        }
+        footer a {
+            color: #90caf9;
+        }
+    </style>
 </head>
-<div class="container">
-<body class="row m-3" >
-<!--TOP ADDRESS-->
-<div class="row text-center text-whitepy-2" style="background-color: #4CAF50;">
-    <div class="row">
+<body class="container-fluid">
+    <!-- TOP BAR -->
+    <div class="row top-bar text-center">
         <div class="col"><i class="bi bi-geo-alt-fill"></i> Chennai, Tamilnadu, India</div>
         <div class="col"><i class="bi bi-envelope-at"></i> abc123@gmail.com</div>
         <div class="col">Nest. Grow. Fly</div>
     </div>
-</div>  
-<!--Brand Name and navbar--> 
-<div class=" mt-2 row py-2" style="height:70px;background-color:linear-gradient(white,rgb(129, 247, 129));">
-  <h1 class="col" style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 3rem;"><img src="static/nest (2).png" alt="evoSci"> <a href="/evoSci" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Sci</a></h1>
-        <!--navbar--> <div class="col-2 "></div>
-        <div class="col-md-4">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active fw-semibold" href="/evoSci">Home</a>
-                  <a class="nav-link fw-semibold" href="#">Features</a>
-                  <a class="nav-link fw-semibold" href="#">About</a>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Subsections</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"></a></li>
-                      <li><a class="dropdown-item" href="/evo_tech">EvoTech</a></li>
-                      <li><a class="dropdown-item" href="#">Space</a></li>
-                      <li><a class="dropdown-item" href="#">Physics</a></li>
-                      <li><a class="dropdown-item" href="#">Chemistry</a></li>
-                      <li><a class="dropdown-item" href="#">Mathematics</a></li>
-                      <li><a class="dropdown-item" href="#">Biology</a></li>
-                    </ul>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-</div><hr>
 
-<h1  style="font-family: 'Sarina', cursive; color: #8203cc; font-size: 25px;"><img src="static/tea.png" alt="evofarm" style="height:40px;width:40px;"><a href="#" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Farm</a> </h1>
-<!--welcome-->
-<div class="row">
-    <div class="row">
-        <div class="col "> <p class="display-5">🌱 Welcome to EvoSci</p><br>
-            <i><b>Where Learners Grow and Ideas Take Flight</b></i>  <br> <br>
+    <!-- BRAND HEADER -->
+    <div class="row align-items-center mt-3 py-2 brand-header">
+        <div class="col-md-6 d-flex align-items-center">
+            <h1 style="font-family: 'Sarina', cursive; color: #2776d6; font-size: 3rem;">
+                <img src="static/nest (2).png" alt="evoSci"> 
+                <a href="/evoSci" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Sci</a>
+            </h1>
+        </div>
+        <div class="col-md-6">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active fw-semibold" href="/evoSci">Home</a>
+                            <a class="nav-link fw-semibold" href="#">Features</a>
+                            <a class="nav-link fw-semibold" href="#">About</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Subsections</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/evo_tech">EvoTech</a></li>
+                                    <li><a class="dropdown-item" href="#">Space</a></li>
+                                    <li><a class="dropdown-item" href="#">Physics</a></li>
+                                    <li><a class="dropdown-item" href="#">Chemistry</a></li>
+                                    <li><a class="dropdown-item" href="#">Mathematics</a></li>
+                                    <li><a class="dropdown-item" href="#">Biology</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+<br>
+    <!-- SECTION: EVOFARM -->
+    <h1 style="font-family: 'Sarina', cursive; color: #8203cc; font-size: 25px;">
+        <img src="static/tea.png" alt="evofarm" style="height:40px;width:40px;">
+        <a href="#" style="text-decoration:none"><span style="color:rgb(73, 230, 41);">Evo</span>Farm</a>
+    </h1>
+
+    <!-- WELCOME SECTION -->
+    <div class="row welcome-section">
+        <div class="col-md-6">
+            <p class="display-5">🌱 Welcome to EvoSci</p>
+            <i><b>Where Learners Grow and Ideas Take Flight</b></i><br><br>
             EvoSci is the nurturing wing of EvoEarth, designed to empower individuals at every stage of their personal and intellectual journey. Whether you're a curious beginner or a passionate builder, this is your space to explore, evolve, and excel.
         </div>
-        <div class="col-6" style="background-image: url('static/OIP (5).jpeg');background-size:cover;">
-        </div><!---->
-        
-        <hr>
+        <div class="col-md-6" style="background-image: url('static/OIP (5).jpeg'); background-size: cover; background-position: center; border-radius: 15px;"></div>
     </div>
-  </div>
-  <!--what we offer-->
-    <div class="row mt-3 " style="font-weight:normal;">
-      <section class="py-5 bg-light" id="what-we-offer">
+
+    <!-- WHAT WE OFFER -->
+    <section class="py-5 bg-light" id="what-we-offer">
         <div class="container">
-          <h2 class="text-center mb-5 fw-bold text-success">What We Offer</h2>
-          <div class="row g-4">
-      
-            <!-- Skill-Based Learning Paths -->
-            <div class="col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0">
-                <div class="card-body text-center">
-                  <i class="bi bi-tools fs-1 text-primary mb-3"></i>
-                  <h5 class="card-title">Skill-Based Learning Paths</h5>
-                  <p class="card-text">Focused modules designed to boost practical abilities.</p>
+            <h2 class="text-center mb-5 fw-bold text-success">What We Offer</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <i class="bi bi-tools fs-1 text-primary mb-3"></i>
+                        <h5 class="card-title">Skill-Based Learning Paths</h5>
+                        <p class="card-text">Focused modules designed to boost practical abilities.</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-      
-            <!-- Creative Development Projects -->
-            <div class="col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0">
-                <div class="card-body text-center">
-                  <i class="bi bi-lightbulb fs-1 text-warning mb-3"></i>
-                  <h5 class="card-title">Creative Development Projects</h5>
-                  <p class="card-text">Real-time projects that shape innovation and critical thinking.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <i class="bi bi-lightbulb fs-1 text-warning mb-3"></i>
+                        <h5 class="card-title">Creative Development Projects</h5>
+                        <p class="card-text">Real-time projects that shape innovation and critical thinking.</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-      
-            <!-- Mentor & Peer Network -->
-            <div class="col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0">
-                <div class="card-body text-center">
-                  <i class="bi bi-people fs-1 text-info mb-3"></i>
-                  <h5 class="card-title">Mentor & Peer Network</h5>
-                  <p class="card-text">A safe space to connect, collaborate, and grow together.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <i class="bi bi-people fs-1 text-info mb-3"></i>
+                        <h5 class="card-title">Mentor & Peer Network</h5>
+                        <p class="card-text">A safe space to connect, collaborate, and grow together.</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-      
-            <!-- Showcase Zone -->
-            <div class="col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0">
-                <div class="card-body text-center">
-                  <i class="bi bi-easel fs-1 text-danger mb-3"></i>
-                  <h5 class="card-title">Showcase Zone</h5>
-                  <p class="card-text">Highlight your ideas, projects, and progress to inspire others.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 text-center p-3">
+                        <i class="bi bi-easel fs-1 text-danger mb-3"></i>
+                        <h5 class="card-title">Showcase Zone</h5>
+                        <p class="card-text">Highlight your ideas, projects, and progress to inspire others.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-      
-          </div>
         </div>
-      </section>
-      
-    </div>
-  <!--join the nest-->
-    <div class="row mt-3">
-      <section class="py-5 col" style="background-color: #FFF8E1;">
-        <div class="container text-center">
-          <h2 class="fw-bold mb-3 text-primary-emphasis">✨ Join the Nest</h2>
-          <p class="fs-5 text-secondary mb-4">
-            At <span class="fw-semibold text-primary">EvoSci</span>, you don't just learn.
-            <br>  
-            <span class="fst-italic text-dark-emphasis">You belong. You build. You bloom.</span>
-          </p>
-          <a href="#get-started" class="btn btn-success btn-lg rounded-pill shadow-sm px-4">
-            Get Started
-          </a>
-        </div>
-      </section>
-      
-    </div>
-  <!--End-->
-  <div class="container-fluid">
- 
-    <div class="row" style="height:300px;background:#4CAF50;color:white">
-      <div class="col">
-        <div class="col p-5 text-white">
-          <p class=" "> To Visit Our Parent Associative
-            <br><br>
-            <a href="/" class="col" style="text-decoration:none; color:rgb(46, 105, 184)"><h1 style="font-family: 'Sarina', cursive; font-size: 3rem;"><img src="static/4393260.png" style="height:50px; width:50px;" alt="EvoEarth"> EvoEarth</h1></a>
+    </section>
+
+    <!-- JOIN THE NEST -->
+    <section class="py-5 text-center" style="background-color: #FFF8E1;">
+        <div class="container">
+            <h2 class="fw-bold mb-3 text-primary-emphasis">✨ Join the Nest</h2>
+            <p class="fs-5 text-secondary mb-4">
+                At <span class="fw-semibold text-primary">EvoSci</span>, you don't just learn.<br>
+                <span class="fst-italic text-dark-emphasis">You belong. You build. You bloom.</span>
             </p>
-          <span>Email : abc@gmail.com</span> <br> 
-          <span>Contact  : 88888 88888</span>
+            <a href="#get-started" class="btn btn-success btn-lg rounded-pill shadow-sm px-4">Get Started</a>
         </div>
-      </div>
-    </div>
-    <div class="row" style="background-color: #063507;color:white">
-      @ Copyright 2025 all rights reserved
-    </div>
-  </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="mt-5 pt-4">
+        <div class="container text-center">
+            <p>To Visit Our Parent Associative</p>
+            <a href="/" style="text-decoration:none;">
+                <h1 style="font-family: 'Sarina', cursive; font-size: 3rem;">
+                    <img src="static/4393260.png" style="height:50px; width:50px;" alt="EvoEarth"> EvoEarth
+                </h1>
+            </a>
+            <p>Email: abc@gmail.com<br>Contact: 88888 88888</p>
+            <div class="pt-2 pb-2" style="background:#063507;">
+                © 2025 All Rights Reserved
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</div>
 </html>
