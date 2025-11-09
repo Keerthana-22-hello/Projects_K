@@ -1,0 +1,144 @@
+:root {
+    --primary: #008cba;
+    --secondary: #f5f5f5;
+    --dark: #222;
+    --light: #fff;
+    --accent: #00c897;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background-color: var(--secondary);
+    color: var(--dark);
+  }
+  header {
+    background: var(--primary);
+    color: var(--light);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+  }
+  nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  }
+  .hero h2 {
+    font-size: 3rem;
+    background: rgba(0,0,0,0.5);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+  }
+  .section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .section h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .product-card {
+    background: var(--light);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  .product-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .product-card h3 {
+    margin-top: 0.8rem;
+  }
+  .product-card p {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 0.8rem;
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .btn:hover {
+    background: #009870;
+  }
+  form {
+    max-width: 400px;
+    margin: 2rem auto;
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  footer {
+    background: var(--dark);
+    color: var(--light);
+    padding: 2rem;
+    text-align: center;
+  }
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .reviews, .wishlist, .orders {
+    background: var(--light);
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .review-card {
+    border-bottom: 1px solid #eee;
+    padding: 0.8rem 0;
+  }

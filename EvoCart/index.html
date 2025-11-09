@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EvoCart - Your Smart Shopping Partner</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EvoCart 🛍️</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Product Items</a></li>
+        <li><a href="#register">Register/Login</a></li>
+        <li><a href="#wishlist">Wishlist</a></li>
+        <li><a href="#orders">Orders</a></li>
+        <li><a href="#care">Customer Care</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Discover the Joy of Shopping with EvoCart</h2>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Trending Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="headphone.webp" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Experience immersive sound with long battery life.</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <div class="product-card">
+        <img src="watch.webp" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>Track your fitness goals with style and accuracy.</p>
+        <a href="#" class="btn">Add to Wishlist</a>
+      </div>
+      <div class="product-card">
+        <img src="sneakers.webp" alt="Sneakers">
+        <h3>Sporty Sneakers</h3>
+        <p>Comfort and style combined for your daily adventures.</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="laptop.webp" alt="Laptop">
+        <h3>Ultra Laptop</h3>
+        <p>Power-packed performance for work and entertainment.</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="register">
+    <h2>User Registration / Login</h2>
+    <form id="regForm">
+      <label>Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label>Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button type="submit" class="btn" style="border:none;">Register</button>
+    </form>
+  </section>
+
+  <section class="section" id="wishlist">
+    <h2>Your Wishlist</h2>
+    <div class="wishlist">
+      <p>❤️ Smart Watch - ₹4,999</p>
+      <p>👟 Sneakers - ₹2,499</p>
+      <p>💻 Laptop - ₹49,999</p>
+    </div>
+  </section>
+
+  <section class="section" id="orders">
+    <h2>Your Orders</h2>
+    <div class="orders">
+      <p>📦 Order #10023 - Headphones - Delivered ✅</p>
+      <p>📦 Order #10048 - Laptop - In Transit 🚚</p>
+    </div>
+  </section>
+
+  <section class="section" id="care">
+    <h2>Customer Care & Reporting</h2>
+    <form>
+      <label>Message:</label>
+      <textarea placeholder="Write your issue or feedback..."></textarea>
+      <button class="btn" type="submit" style="border:none;">Submit</button>
+    </form>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>EvoCart</strong> – your one-stop online marketplace offering electronics, fashion, and lifestyle essentials. We believe in quality, trust, and the joy of shopping made simple.</p>
+
+    <div class="reviews">
+      <h3 style="margin-bottom:1rem;">Customer Reviews</h3>
+      <div class="review-card">
+        <strong>Priya Sharma</strong> ⭐⭐⭐⭐⭐<br>
+        “Fantastic experience! Delivery was super fast and quality was excellent.”
+      </div>
+      <div class="review-card">
+        <strong>Arjun Patel</strong> ⭐⭐⭐⭐<br>
+        “The website is easy to use and products are authentic.”
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 EvoCart. All rights reserved.</p>
+    <p>Follow us on <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+  </footer>
+
+  <script>
+    // Minimal JS for form validation
+    document.getElementById('regForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if(name === "" || email === "" || password === ""){
+        alert("All fields are required!");
+        return;
+      }
+
+      if(!email.includes("@")){
+        alert("Enter a valid email address!");
+        return;
+      }
+
+      if(password.length < 6){
+        alert("Password must be at least 6 characters!");
+        return;
+      }
+
+      alert("Registration successful! 🎉");
+      document.getElementById('regForm').reset();
+    });
+  </script>
+</body>
+</html>
